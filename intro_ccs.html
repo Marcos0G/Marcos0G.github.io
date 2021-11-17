@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <meta name= "viewport" content="width=device-width, initial-scales=1.0">
+ <title>Introducción CSS (Marcos García)</title>
+ <style>
+    h1{
+        background-color: black
+     }
+    h1{
+        color: palevioletred
+    }
+    h2 {
+        background-color:black 
+    }
+    h2{
+        color: lime
+    }
+    #parrafo-explicado{
+        background-color: cyan
+    }
+    .parrafo-doble{
+        color: darkorchid
+    }
+</style>
+ </head>
+ <body>
+     <h1>Introducción a css Marcos García</h1>
+     <h2>Seleccion a partir de una etiqueta</h2>
+     <p>
+        Podemos cambiar las característucas del texto usando las etiqutas, <br>
+        para hacerlo simplemente debemos usar las etiqutas style y dentro  <br>
+        escribir el nombre de las etiquetas que queremos cambiar seguidas de {} y elegir <br>
+        el color. Los títulos tienen el color de las letras y el fondo también están cambiados <br>
+        usando esta selección. 
+     </p>
+     <h2>Selección a partir de id (#)</h2>
+     <p id="parrafo-explicado"> 
+        Se pueden usar id en las etiquetas para seleccionar algunas especificas en vez de todas <br>
+        como haría la simple elección por etiqueta. Para poder hacer esto, lo primero que tenemos <br>
+        que hacer es ir a la etiqueta que queremos seleccionar y escribir id= y el nombre del id que <br>
+        vamos a usar entre " (ejemplo: p id=""). Después, volveremos a las etiquetas style y pondremos <br>
+        el # y el nombre del id y lo demas sera seleccionar el color como con las etiquetas normales. <br>
+        (Este parrafo esta editado así)
+    </p>
+    <h2>Selección por clase</h2>
+    <p class="parrafo-doble"> 
+        No se puede usar el mismo id para diferentes elementos, tiene que ser único.Para seleccionar <br> 
+        varios elementos usando el id, deberíamos ir inventando uno nuevo para cada cosa. Para evitar <br>
+        esto esta la etiqueta class. Esta sirve para agrupar varios elementos a un mismo grupo y darles <br>
+        características específicas. Para usar class debemos ir a las etiquetas que vayamos a cambiar <br>
+        y dentro de estas escribir class="" (ejemplo: p class=""). Luego volvemos a style y escribimos <br>
+        . y el nombre del id seguido (.explicación por ejemplo). Este parrafo esta seleccionado con class <br>
+    </p>
+    <p class="parrafo-doble"> 
+        Y este parrafo aparte <br>
+        también lo esta. <br>
+    </p>
+ </body>
+</html>
