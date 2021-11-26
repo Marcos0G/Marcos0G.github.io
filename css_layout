@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <meta name= "viewport" content="width=device-width, initial-scales=1.0">
+ <title>Intro to html Marcos García TIC 21-22</title>
+ <style>
+     #color{
+         color: darkmagenta;
+     }
+     .grupo{
+         font-family: Arial, Helvetica, sans-serif;
+     }
+     #auto{
+         background-color: lightgray;
+        width: 50%;
+                height: 200px;
+                overflow: auto;
+                color: black;
+     }
+     #visible{
+        background-color: lightgray;
+        width: 50%;
+                height: 200px;
+                overflow: visible;
+                color: black;
+     }
+     #hidden{
+        background-color: lightgray;
+        width: 50%;
+                height: 200px;
+                overflow: hidden;
+                color: black;
+     }
+     #caja{
+         padding: 20px;
+         border: 10px ridge lime;
+         margin-top: 5%;
+         border-top: 20px ridge darkolivegreen;
+         
+     }
+ </style>
+ <body>
+ <h1>Css layout (Marcos García)</h1>
+ <h2>etiqueta span<h2>
+<p> Con esta <span id="color">etiqueta</span> podemos seleccionar texto en línea, y cambiar<br>
+    sus características indivisuales libremente. por ejemplo la palabra etiqueta de arriba<br>
+    estaría cambiada de color solo ella usando span. 
+</p>
+<h2>Etiqueta div</h2>
+<div class="grupo">
+<p>Al contrario que span, div sirve para agrupar elementos en bloque y cambiar sus características.<br>
+Por ejemplo estos dos<br>
+parrafos los unimos por div<br>
+<br>
+Así podemos cambiar sus características
+conjuntamente.
+</div>
+</p>
+<h2>Overflow</h2>
+La etiqueta overflow se usa cuando un texto es demasiado largo y se sale del encuadre. hay diferentes tipos<br>
+<p>
+Usaré un texto de wikipwsia como ejemplo
+</p>
+<p id="auto">
+overflow automático (crea una barra de deslizamiento):<br>
+GitHub es una forja (plataforma de desarrollo colaborativo) para <br>
+alojar proyectos utilizando el sistema de control de versiones Git. <br>
+Se utiliza principalmente para la creación de código fuente de programas<br>
+de ordenador. El software que opera GitHub fue escrito en Ruby on Rails. <br>
+Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc. Anteriormente<br>
+era conocida como Logical Awesome LLC. El código de los proyectos alojados en <br>
+GitHub se almacena típicamente de forma pública.
+</p>
+<p id="visible">
+    overflow visible (deja visible lo que se sale):<br>
+    GitHub es una forja (plataforma de desarrollo colaborativo) para <br>
+    alojar proyectos utilizando el sistema de control de versiones Git. <br>
+    Se utiliza principalmente para la creación de código fuente de programas<br>
+    de ordenador. El software que opera GitHub fue escrito en Ruby on Rails. <br>
+    Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc. Anteriormente<br>
+    era conocida como Logical Awesome LLC. El código de los proyectos alojados en <br>
+    GitHub se almacena típicamente de forma pública.
+</p>
+<br>
+<p id="hidden">
+    overflow hidden (corta el texto):<br>
+    GitHub es una forja (plataforma de desarrollo colaborativo) para <br>
+    alojar proyectos utilizando el sistema de control de versiones Git. <br>
+    Se utiliza principalmente para la creación de código fuente de programas<br>
+    de ordenador. El software que opera GitHub fue escrito en Ruby on Rails. <br>
+    Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc. Anteriormente<br>
+    era conocida como Logical Awesome LLC. El código de los proyectos alojados en <br>
+    GitHub se almacena típicamente de forma pública.
+</p>
+<h2>Modelo de caja</h2>
+<p>
+Se trata de una caja que envuelve los elementos de html. Consta de márgenes, bordes, relleno y el contenido real.<br>
+<div id="caja">
+<p> por ejemplo podemos ponerle un marco a este texto y "encerrarlo" en una caja<br>
+    en este caso tendría un marco de 10 px con la parte de arriba mas oscura y un margen de 5%</p>
+</div>
+</p>
+ </body>
+</html>
