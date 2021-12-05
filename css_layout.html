@@ -7,10 +7,13 @@
  <style>
      body{
          background-color: lightsteelblue;
+         color: black;
      }
      h1{
          background-color: black;
          color: darkorange;
+         position: fixed;
+         top: 15px;
      }
      h2{
          background-color: black;
@@ -59,9 +62,45 @@
             margin-bottom: 10px;
             border: 8px inset blue;
      }
+     #escenario{
+         position: absolute;
+         left: 10px;
+         top:2100px;
+         z-index: 1;
+     }
+     #cosa{
+         position: absolute;
+         left: 50px;
+         top: 2170px;
+         z-index: 2;
+     }
+     #azulin{
+         position: absolute;
+         left: 90px;
+         top: 2150px;
+         z-index: 3;
+     }
+     #re{
+         position: relative;
+         top: 180px;
+         left: 10px;
+     }
+     #ultimo{
+         position: absolute;
+         top: 2300px;
+     }
+     #floatie{
+         float: left;
+     }
+     #pie{
+         background-color: lightgray;
+     }
  </style>
  <body>
+     <h3>Ultima actualización: 5 dic.</h3>
  <h1>Css layout (Marcos García)</h1>
+ 
+ <br>
 <h2>Etiqueta span</h2>
 <p>
 Con esta etiqueta podemos seleccionar texto en línea, y cambiar<br>
@@ -106,6 +145,8 @@ GitHub se almacena típicamente de forma pública.
     GitHub se almacena típicamente de forma pública.
 </p>
 <br>
+<br>
+<br>
 <p id="hidden">
     <span class="over">overflow hidden (corta el texto):</span><br>
     GitHub es una forja (plataforma de desarrollo colaborativo) para <br>
@@ -116,6 +157,7 @@ GitHub se almacena típicamente de forma pública.
     era conocida como Logical Awesome LLC. El código de los proyectos alojados en <br>
     GitHub se almacena típicamente de forma pública.
 </p>
+<br>
 <h2>Modelo de caja</h2>
 <p>
 Se trata de una caja que envuelve los elementos de html. Consta de márgenes, bordes, relleno y el contenido real.
@@ -130,5 +172,33 @@ tambien podemos ponerle marcos a las imagenes, por ejemplo a esta he decidido po
 <br>
 </div>
 </p>
+<h2>Posicionamiento (relativo, absoluto, arreglado y z-index)</h2>
+-Relativo: coloca el elemento donde lo haría normalmente pero compensando un poco, esta compensación se determina con 4 nuevas etiquetas:<br>
+Top, bottom, right y left. Se despliega bajo todo. 
+-Absoluto: se saca al elemento del "flujo normal" para colocarlo en cualquier parte de la pantalla (el escenario y la criatura serián un ejemplo)
+-arreglado/fixed: hace parecer que las cosas no se mueven dejandolas fijas en la pantalla (un ejemplo de esto es el título de esta página)
+-Z-index: esta propiedad se usa para indicar al navegador el orden en el que tiene que dibujar los elementos, dandoles diferentes indices<br>
+(z-index 1, z-index 2, ...) estos elementos de debajo tienen z-index aplicado.
+<img width="300px" src="https://www.aulaactual.com/wp-content/uploads/2019/04/escenario-1280x720.jpg" alt="escenario" id="escenario">
+<img width="100px" src="https://cdn.kastatic.org/images/avatars/svg/blobby-blue.svg" alt="cosa" id="cosa">
+<img width="100px" src="https://cdn.kastatic.org/images/avatars/svg/aqualine-seedling.svg" alt="azulin" id="azulin">
+<p id="re">Este texto es un ejemplo de posicionamiento relativo</p>
+<div id="ultimo">
+<h2>Elementos flotantes</h2>
+<p>
+    
+<img width="100px" src="https://th.bing.com/th/id/R.1ad5bee185b9d72241a8755a041d101e?rik=6JkVZRdPc%2buA4w&pid=ImgRaw&r=0" alt="float" id="floatie">
+Se usan para que los elementos queden "flotando" y el texto se acomode a su alrededor.<br>
+Por ejemplo acomodamos este texto a la foto flotando a laizquierda.
+<br>
+<br>
+<br>
+También tendriamos el atributo clear, usado para que se acomode donde queramos. puede ser both (ira abajo), o right/left si no lo queremos solo a un lado.<br>
+Por ejemplo el "pie de pagina" tiene clear both.
+</p>
+<p id="pie">
+Ejemplo de texto con clear both.
+</p>
+</div>
  </body>
 </html>
