@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <meta name= "viewport" content="width=device-width, initial-scales=1.0">
+ <title>More css selectors Marcos García última actualización: 14/12/21</title>
+ <style>
+ h1{
+     background-color: black;
+     color: darkorange;
+ }
+ h2{
+     background-color: black;
+     color: gold;
+ }
+ .color1{
+     color: purple;
+ }
+ .color2{
+     background-color: black;
+ }
+ .example{
+     background-color: powderblue;
+     color: black;
+ }
+ strong.example{
+     color:deeppink
+ }
+ .blue{
+     background-color: blue;
+ } 
+ .pink{
+     background-color:deeppink;
+ }
+ .green{
+     background-color: limegreen;
+ }
+ p .blue{
+     color: blue;
+     background-color: transparent;
+ }
+ h3, h4{
+     font-family: 'Courier New', Courier, monospace;
+     color: chartreuse;
+ }
+ a:link{
+   color: darkturquoise;
+ }
+ a:visited{
+     color: lawngreen;
+ }
+ a:hover{
+     color: violet;
+ }
+ a:active{
+     color: red;
+ }
+ a:focus{
+     color: lawngreen;
+ }
+</style>
+ </head>
+ <body>
+<h1>Más selectores de css (Marcos García)</h1>
+<h2>Usar más de 1 clase en la misma etiqueta de html</h2>
+<p class="example">
+Esto se utiliza cuando tenemos dos <strong class="color1">elementos</strong> con la misma <strong class="color1">clase</strong> y solo queremos cambiar las <strong class="color1 color2">características</strong>,<br>
+por ejemplo, las palabras elementos, clase y características comparten la clase "color1" que hace que se<br>
+vean de color morado, pero solo la palabra características tiene ademas la clase "color2" que hace que su <br>
+color de fondo sea el amarillo.
+</p>
+<h2>Combinar selectores de etiqueta con selectores de clase</h2>
+<p>
+Se utiliza por ejemplo cuando dos elementos tienen la misma clase pero queremos modificar uno especificamente,<br>
+por ejemplo esta <strong class="example">"palabra"</strong> y el parrafo de arriba compartitian la clase "example", pero añadiendo<br>
+strong. antes de la clase podemos cambiar las caracteristicas de las etiquetas strong con la clase example sin modificar<br>
+las demas.
+</p>
+<h2>Selectores descendientes</h2>
+<p>
+Sirven para seleccionar elementos basandose en laposicion que tienen en el documento. Esto se hace colocando lo que se llama<br>
+etiqueta padre primero y luego un espacio y la clase. Por ejemplo <strong class="blue">"palabra"</strong> y azul (en la lista) comparten la etiqueta strong<br>
+y la clase blue, la diferencia es que una esta dentro de una etiqueta p y la otra en una etiqueta li. 
+<ul>
+<li><strong class="blue">Azul</strong></li>
+<li><strong class="pink">Rosa</strong>></li>
+<li><strong class="green">Verde</strong>></li>
+</ul>
+</p>
+<h2>Agrupar selctores de css</h2>
+<p>Se usan para agrupar elementos a los que se dan las características. se hace poniendolos separados por una , en style.<br>
+por ejemplo, esto¡e h3 y h4 estan modificados mediante una agrupación.
+<h3>Enunciado en h3</h3>
+<h4>Enunciado en h4</h4>
+</p>
+<h2>Pseudoclases dinámicas</h2>
+<p>
+Se usan para seleccionar elementos que contienen información que no es parte de la estructura de la propia pagina web. Se usa <br>
+la etiqueta a: y despúes lo que se quiere seleccionar, por ejemplo los links siguientes se ponen azules si no se han visitado<br>
+mediante la etiquta a:links y verdes cuando se han visitado gracias a la etiqueta a:visited. Y con las etiquetas a:hoover, a:active<br>
+y a:focus se aplica color de fondo al pasar por encima de los enlaces y un clor diferene al momento de pinchar en ellos.<br>
+<ul>
+<li><a href="https://www.youtube.com/">enlace a youtube</a></li>
+<li><a href="https://twitter.com/?lang=es">enlace a twitter</a></li>
+<li><a href="https://www.instagram.com/?hl=es">enlace a instagram</a></li>
+</ul>
+</p>
+ </body>
+</html>
