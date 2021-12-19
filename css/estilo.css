@@ -1,0 +1,20 @@
+h1{
+    background-color: black;
+    color: blueviolet;
+}
+h2{
+    background-color: black;
+    color: chartreuse;
+}
+p{
+    background-color: lightblue;
+}
+body{
+    background-color: lightgreen;
+}
+strong{
+    color: mediumorchid;
+}
+#rosa{
+    color: darkmagenta;
+}
